@@ -1,0 +1,38 @@
+server:
+  port: 3535
+  servlet:
+    context-path: /his 
+spring:
+  datasource:
+    password: vijay
+    url: jdbc:oracle:thin:@localhost:1521/orcl
+    username: vijay
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  h2:
+    console:
+      enabled: true
+  mail:
+    port: 587
+    host: smtp.gmail.com
+    username: hibernatejpa@gmail.com
+    password: Techies@88
+    properties:
+      mail:
+       smtp:
+        auth: true
+        connectiontimeout: 10000
+        timeout: 10000
+        writetimeout: 10000
+        starttls:
+         enable: true
